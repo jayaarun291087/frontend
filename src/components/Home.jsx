@@ -21,7 +21,7 @@ const Home = () => {
         <>
           <h2>New Arrivals</h2>
           <div className="products">
-            {
+            {data &&
               data.map((product) => (
                 <div key={product.id} className="product">
                   <h3>{product.name}</h3>
